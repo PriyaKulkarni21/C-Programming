@@ -3,7 +3,7 @@
 #include<stdio.h>
 int main()
 {
-        int size;
+        int size, i,j, temp;
         printf("enter the size of the array");
         scanf("%d", &size);
         int arr[size];
@@ -25,4 +25,16 @@ int main()
 	 {
 		 if(arr[i]>arr[j])
 		 {
-			 printf
+			 temp=arr[i];
+			 arr[i]=arr[j];
+			 arr[j]=temp;
+		 }
+	 }
+	}
+	printf("given sorted array is");
+        for(int i=0;i<size;i++)
+        {
+                printf("%d ", arr[i]);
+        }
+
+}
